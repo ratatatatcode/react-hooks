@@ -9,9 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "React CSS Effects",
+  title: "React | Random Collection",
   description:
-    "A personal exploration of CSS effects in React, built manually without using AI.",
+    "A personal collection of React UI experiments—CSS effects, animations, and custom components built through hands-on exploration.",
 };
 
 export default function RootLayout({
