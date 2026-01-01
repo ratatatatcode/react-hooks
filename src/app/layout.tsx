@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import './globals.css';
 
 const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: '--font-poppins',
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata: Metadata = {
-  title: "React | Random Collection",
+  title: 'React | Random Collection',
   description:
-    "A personal collection of React UI experiments—CSS effects, animations, and custom components built through hands-on exploration.",
+    'A personal collection of React UI experiments—CSS effects, animations, and custom components built through hands-on exploration.',
 };
 
 export default function RootLayout({
@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} scroll-smooth antialiased`}>
-        {children}
-      </body>
+      <body className={`${poppins.variable} scroll-smooth antialiased`}>{children}</body>
     </html>
   );
 }
