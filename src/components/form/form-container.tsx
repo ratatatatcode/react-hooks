@@ -27,7 +27,7 @@ export default function FormContainer({
       </div>
 
       <h1 className="font-bold">{title}</h1>
-      <p className="text-muted-foreground">{desc}</p>
+      <p className="text-muted-foreground text-sm">{desc}</p>
       <hr className="my-2 border" />
 
       {children}
