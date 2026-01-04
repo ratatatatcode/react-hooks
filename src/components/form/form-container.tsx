@@ -14,7 +14,7 @@ export default function FormContainer({
   children: ReactNode;
 }) {
   return (
-    <div className="h-auto w-full rounded-2xl border p-6 text-left shadow-md md:w-[400px]">
+    <form className="h-auto w-full rounded-2xl border p-6 text-left shadow-md md:w-[400px]">
       {/* w-[380px] - if you don't want to make use of w-full and breakpoint prefix (sm/md/lg) */}
 
       <div className="flex w-full justify-between">
@@ -31,6 +31,6 @@ export default function FormContainer({
       <hr className="my-2 border" />
 
       {children}
-    </div>
+    </form>
   );
 }
