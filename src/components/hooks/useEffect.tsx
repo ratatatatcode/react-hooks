@@ -24,10 +24,14 @@ export default function UseEffectComponent() {
   return (
     <div className="h-auto w-120 border rounded-md p-4 shadow-md">
       <h2 className="font-semibold">useState</h2>
+      <p className="text-sm">
+        useEffect lets you run side effects after rendering. It runs on the
+        initial render and can re-run when specified dependencies change.
+      </p>
       <hr className="my-2" />
       <input
         type="text"
-        className="w-full border rounded-md p-2"
+        className="w-full border rounded-md mb-2 p-2"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
         placeholder="Type here"

@@ -10,6 +10,10 @@ export default function UseStateComponent() {
   return (
     <div className="h-auto w-120 border rounded-md p-4 shadow-md">
       <h2 className="font-semibold">useState</h2>
+      <p className="text-sm">
+        useState is used to store data that can change over time. When the state
+        changes, React re-renders the component with the new data.
+      </p>
       <hr className="my-2" />
       <div className="flex items-center justify-between">
         <p>Count {count}</p>
