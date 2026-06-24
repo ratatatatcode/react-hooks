@@ -1,6 +1,7 @@
 import UseStateComponent from "./components/hooks/useState";
 import UseEffectComponent from "./components/hooks/useEffect";
 import UseRefComponent from "./components/hooks/useRef";
+import UseContextComponent from "./components/hooks/useContext/useContext";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <UseStateComponent />
       <UseEffectComponent />
       <UseRefComponent />
+      <UseContextComponent />
     </div>
   );
 }
