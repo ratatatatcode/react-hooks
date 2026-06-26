@@ -23,7 +23,7 @@ export default function UseEffectComponent() {
 
   return (
     <div className="h-auto w-120 border rounded-md p-4 shadow-md">
-      <h2 className="font-semibold">useState</h2>
+      <h2 className="font-semibold">useEffect</h2>
       <p className="text-sm">
         useEffect lets you run side effects after rendering. It runs on the
         initial render and can re-run when specified dependencies change.
