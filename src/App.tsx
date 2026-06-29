@@ -3,6 +3,7 @@ import UseEffectComponent from "./components/hooks/useEffect";
 import UseRefComponent from "./components/hooks/useRef";
 import UseContextComponent from "./components/hooks/useContext/useContext";
 import UseMemoComponent from "./components/hooks/useMemo";
+import UseCallbackComponent from "./components/hooks/useCallback";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <UseRefComponent />
       <UseContextComponent />
       <UseMemoComponent />
+      <UseCallbackComponent />
     </div>
   );
 }
