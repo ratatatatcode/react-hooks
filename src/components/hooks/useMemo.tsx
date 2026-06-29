@@ -31,29 +31,31 @@ export default function UseMemoComponent() {
   }, []);
 
   return (
-    <div className="h-auto w-120 border rounded-md p-4 shadow-md">
-      <h2 className="font-semibold">useMemo</h2>
-      <p className="text-sm">
-        Use useMemo when a calculation is expensive and you want to avoid
-        recalculating it on every render.
-      </p>
-      <hr className="my-2" />
-      {display ? "" : "Loading..."}
-      {display?.map((todo) => (
-        <div key={todo.id}>
-          <p className="font-bold text-xs">
-            {todo.id} <span className="font-normal text-sm">{todo.todo}</span>
-          </p>
+    <section className="flex items-center justify-center md:h-120 w-full">
+      <div className="h-auto w-full md:w-120 border rounded-md p-4 shadow-md">
+        <h2 className="font-semibold">useMemo</h2>
+        <p className="text-sm">
+          Use useMemo when a calculation is expensive and you want to avoid
+          recalculating it on every render.
+        </p>
+        <hr className="my-2" />
+        {display ? "" : "Loading..."}
+        {display?.map((todo) => (
+          <div key={todo.id}>
+            <p className="font-bold text-xs">
+              {todo.id} <span className="font-normal text-sm">{todo.todo}</span>
+            </p>
+          </div>
+        ))}
+        <div className="flex justify-end">
+          <button
+            className="border rounded-md px-2 py-1 text-white font-semibold text-sm bg-black"
+            onClick={() => setStatus((prev) => !prev)}
+          >
+            {status ? "Show Completed" : "Show Incomplete"}
+          </button>
         </div>
-      ))}
-      <div className="flex justify-end">
-        <button
-          className="border rounded-md px-2 py-1 text-white font-semibold text-sm bg-black"
-          onClick={() => setStatus((prev) => !prev)}
-        >
-          {status ? "Show Completed" : "Show Incomplete"}
-        </button>
       </div>
-    </div>
+    </section>
   );
 }

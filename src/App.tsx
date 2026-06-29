@@ -6,7 +6,7 @@ import UseMemoComponent from "./components/hooks/useMemo";
 
 function App() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center gap-4 p-4">
+    <div className="min-h-screen w-full grid md:grid-cols-2 place-items-center gap-4 p-4">
       <UseStateComponent />
       <UseEffectComponent />
       <UseRefComponent />
